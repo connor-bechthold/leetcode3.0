@@ -5,9 +5,9 @@ Hashmap!
 Iterate through the list, storing the difference of subtracting each value from the target value in the hashmap of the form difference : index. For each value we go over, check if that value is in the hashmap as a difference. If the difference exists, then we've found a number that when added with our current number sums to the target. From there, we can return the two indexes.
 
 # Complexity
-- Time complexity: $$O(n)$$
+- Time complexity: $O(n)$
 
-- Space complexity: $$O(n)$$
+- Space complexity: $O(n)$
 
 # Code
 ```python3
