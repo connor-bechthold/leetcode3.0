@@ -1,8 +1,8 @@
 # Intuition
-Slide that window
+Sliding window
 
 # Approach
-Keep track of the lowest buy that we can make. By default, we will set this to the first day and start from the second day. If the current stock price is less than pr equal to our current buy, update the current buy to be that price since it saves us money wasted. Otherwise, the stock price is higher than our lowest buy, which means we can calculate the possible profit. We keep track of the max profit in a variable, and return it at the end.
+Left and right pointer which start at the first and second day. The left pointer will stay at the lowest stock price we can buy, and the right pointer will be on the price we sell at. If the right pointer is less than or equal to the left, we set the left equal to the right since it's a lower buy price. Otherwise, we can make a profit, and we update a global variable the price at the right pointer minus the left pointer.
 
 # Complexity
 - Time complexity: $O(n)$
@@ -16,14 +16,14 @@ Keep track of the lowest buy that we can make. By default, we will set this to t
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         max_profit = 0
-        lowest_buy = prices[0]
+        l, r = 0, 1
 
-        for i in range(1, len(prices)):
-            stock_price = prices[i]
-            if stock_price <= lowest_buy:
-                lowest_buy = stock_price
+        while r < len(prices):
+            if prices[r] <= prices[l]:
+                l = r
             else:
-                max_profit = max(stock_price - lowest_buy, max_profit)
+                max_profit = max(prices[r] - prices[l], max_profit)
+            r += 1
         
         return max_profit
 ```
