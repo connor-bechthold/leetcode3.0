@@ -16,14 +16,14 @@ Push all open brackets onto the stack. When we get a closing bracket, its matchi
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
+        bracket_map = {")": "(", "]": "[", "}": "{"}
         for bracket in s:
-            if bracket == "(" or bracket == "[" or bracket == "{":
+            if bracket not in bracket_map:
                 stack.append(bracket)
             else:
                 if len(stack) == 0:
                     return False
-                match = stack.pop() + bracket
-                if not (match == "()" or match == "[]" or match == "{}"):
+                if bracket_map[bracket] != stack.pop():
                     return False
         return len(stack) == 0
 ```
