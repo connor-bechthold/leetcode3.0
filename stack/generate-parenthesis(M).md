@@ -2,7 +2,7 @@
 This should be under backtracking but we use a stack anyways
 
 # Approach
-The stack will keep track of our current combination at any time. They key here is to always keep track of the number of open and closed brackets. A valid combination will have $n$ opening and $n$ closed brackets. We start by adding as many open brackets as we can up to n. Everytime we recursively call, we push an open bracket onto the stack, and then pop it after the function returns (ie. all combinations were exhausted). Once we're done adding open brackets on our current combination, we add closing brackets and the process repeating.
+The stack will keep track of our current combination at any time. They key here is to always keep track of the number of open and closed brackets. A valid combination will have $n$ opening and $n$ closed brackets. We start by adding as many open brackets as we can up to n. Everytime we recursively call, we push an open bracket onto the stack, and then pop it after the function returns (ie. all combinations were exhausted). Once we're done adding open brackets on our current combination, we can add closing brackets. The bound for adding closing brackets is the amount of open brackets. This process repeats.
 
 Ex. algo progression for $n = 2$
 (, ((, ((), (()), (), ()(, ()()
