@@ -4,6 +4,8 @@ Fast and slow pointer Floyd algo magic
 # Approach
 Note that every value in the array is within an index in the array so it replicates a linked list (omitting the index 0, which can be seen as the starting point). We can then reference this fast and slow pointer diagram to derive Floyd's algo used, where slow pointer starts on the second value in the list (nums[0]) and the fast pointer starts at the third (nums[1])
 
+![image info](/images/cycle.png)
+
 In this example, the duplicate entry is 1 (the start of the cycle). Take the distance from the start of the list to the start of the cycle as $p$, the distance from where the two pointers meet to the start of the cycle as $x$, and the length of the cycle of $C$.
 
 We the know the fast pointer moves at twice the speed of the slow pointer so the distances travelled are this:
