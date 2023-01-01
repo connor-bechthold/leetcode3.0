@@ -2,7 +2,7 @@
 Bfs
 
 # Approach
-Standard bfs. We first check to see if the tree is empty. If it isn't, we push the root node onto the queue. We loop while there are still items in the queue. We make sure that for each level, we only iterate through the nodes on that level (since we'll also be pushing children on the list at the same time). We only push each node's children on the list if it exists. We also push each node's value onto a list. At the end of each level, we push the created list onto our result list.
+Standard bfs. We first check to see if the tree is empty. If it isn't, we push the root node onto the queue. We loop while there are still items in the queue. We make sure that for each level, we only iterate through the nodes on that level (since we'll also be pushing children on the list at the same time). We only push each node's children on the queu if it exists. We also push each node's value onto a list. At the end of each level, we push the created list onto our result list.
 
 # Complexity
 - Time complexity: $O(n)$
