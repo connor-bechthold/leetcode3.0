@@ -18,6 +18,9 @@ So, with this and mind we can perform the following algorithm:
     - For the left subtree (node.left), we want to keep going left as long as there are nodes to add in the left subtree. **Remember we increase the global preorder index by one each time. Preorder will keep going left until it can't, and then it goes right. This is why the inorder is important. At each step, it will tell us whether we need to keep adding to the left subtree, or add to the right subtree.** Hence, when we go left, we change the bounds to (start, mid - 1) which covers the number of nodes that still need to be added to the LEFT of that preorder node.
     - The same goes for the right subtree (node.right). Keep in mind that once we get here, **the preorder index is already in the right spot since we went left BEFORE right**. The bounds change to cover the values in the RIGHT subtree of the node, which is (mid + 1, end)
 
+An example:
+![image info](/images/tree.jpg)
+
 # Complexity
 - Time complexity: $O(n)$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
