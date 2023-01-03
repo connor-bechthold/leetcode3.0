@@ -17,6 +17,8 @@ When we add values to the heap, we will almost always have k + 1 elements. We ca
 - Space complexity: $O(N)$, since our heap is of length N initiallyt
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
+Note that alternatively we could use quick select to achieve $O(n)$ time, which is what I did in kth-largest-element-in-array
+
 # Code
 ```python3
 class KthLargest:
