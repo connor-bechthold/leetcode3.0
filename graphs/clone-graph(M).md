@@ -8,7 +8,7 @@ The idea here is to have a hashmap where the key is a node in the graph, and the
 - Time complexity: $O(e + v)$, where $e$ is the number of edges and $v$ is the number of vertices
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity: $O(n)$, where n is the number of nodes
+- Space complexity: $O(v)$ for the nodemap
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
