@@ -14,10 +14,10 @@ The idea of the algorithm is this:
     - Finally, we go through every edge (or disjoint set) and union them all. If we can't union two edges, that means they were already in the same set, and would create a loop, so we return them
 
 # Complexity
-- Time complexity: $O(n)$ - union find is linear time with ranking and path compression
+- Time complexity: $O(v)$ - union find is linear time with ranking and path compression
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity: $O(n)$ for arrays
+- Space complexity: $O(v)$ for arrays
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
