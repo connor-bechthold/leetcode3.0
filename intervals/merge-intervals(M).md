@@ -7,7 +7,7 @@ This is a similar approach to insert interval with a few key details. The first 
 After this is done, we add the first interval to the result list. For each following interval, we simply check to see if the interval comes after the interval at the end of the list. If it is, we add it and move on. If it's not, there's overlap. However, since the start values or sorted, we simply only update the max of the end values.
 
 # Complexity
-- Time complexity: $O(n^2log(n))$
+- Time complexity: $O(nlog(n))$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
 - Space complexity: $O(n)$ for the sort
