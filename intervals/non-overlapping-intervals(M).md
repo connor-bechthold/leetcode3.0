@@ -9,7 +9,7 @@ For every subsequent interval, we check if it's overlapping. If it's not, we upd
 For example, if we have $(1, 3)$ and $(1, 5)$, we want to remove the latter because it stretches longer and is more likely to cause overlap. Thus, we choose the MIN end time and update the previous end value to match that. We also increment the counter for removals, since this is what that action is replicating.
 
 # Complexity
-- Time complexity: $O(n^2log(n))$
+- Time complexity: $O(nlog(n))$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
 - Space complexity: $O(n)$
