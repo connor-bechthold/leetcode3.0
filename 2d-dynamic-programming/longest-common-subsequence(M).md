@@ -4,7 +4,7 @@
 # Approach
 This appraoch is better visualized with the DP table constructed, which is a bottom up constructed.
 
-![IMG_0640](https://github.com/connor-bechthold/leetcode3.0/assets/64047863/d43f33af-808c-4b49-a5c3-4df2ac9f176f)
+![image info](/images/LCS.jpg)
 
 For this example, we use $ace$ and $abcde$. With this grid, any square value is going to the longest common subsequence between the two substrings (for example, the $(c, c)$ coordinate is the LCS between $ce$ and $cde$). There are two different cases:
 - If the coordinates match (characters are the same), the LCS is 1 + the grid value down 1 and to the left one. In the case above, this is between $de$ and $e$ (which makes sense, as we're just breaking the problem down further)
