@@ -5,7 +5,7 @@ Intervals
 Again, sort intervals by start date. This is very similar to non-overlapping intervals, where we keep track of the end of the previous interval, which is initially the first interval. As soon as the beginning of the next interval is less than the previous end, we return False, as there's overlap. If we make it through every interval, return True.
 
 # Complexity
-- Time complexity: $O(n^2log(n))$
+- Time complexity: $O(nlog(n))$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
 - Space complexity: $O(n)$
