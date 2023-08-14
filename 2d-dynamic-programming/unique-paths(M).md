@@ -1,5 +1,5 @@
 # Intuition
-2D DP
+2D DP (But actually just 1D)
 
 # Approach
 We can take adavntage of the fact that the number of unique paths to any square is the sum of the number of unique paths to the sqaure above plus the the number of unique paths to the square to the left (since we can only move down and right). 
