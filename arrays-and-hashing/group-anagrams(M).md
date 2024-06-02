@@ -8,7 +8,7 @@ Anagrams have one to one correspodence between the characters they contain. Sinc
 - Time complexity: $O(mn)$. We define "n" as the number of input words, and "m" as the max number of chars a word will have
 <!-- Add your time complexity here, e.g. $O(n)$ -->
 
-- Space complexity: $O(mn)$. Our hashmap will store at worse case $n * O(1) = O(n)$ key tuples and $n$ words of max $m$ characters which is $O(mn)$. In total this is $O(n + mn)$ which is $O(mn)$.
+- Space complexity: $O(mn)$. This counts for storing n words, with a max length of m. If we're assuming these words are already stored, this is just $O(1)$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
